@@ -4,4 +4,4 @@ install:
   - perl -V
   
 build_script:
-  - perl -MTerm::ReadKey -E 'say $Term::ReadKey::VERSION'
+  - perl -MTerm::ReadKey -E "say $Term::ReadKey::VERSION"
