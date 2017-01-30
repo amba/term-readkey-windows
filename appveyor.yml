@@ -6,6 +6,8 @@ install:
   - choco install --allowemptychecksum strawberryperl %configuration%
   - path C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
   - perl -V
+  - cpan App::cpanminus
+  - cpanm -v Term::ReadKey
   
 build_script:
   - perl term-readkey.pl
