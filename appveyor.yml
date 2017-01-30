@@ -4,6 +4,4 @@ install:
   - perl -V
   
 build_script:
-  - cpanm -v Term::ReadKey@2.30.02
-  - perl term-readkey.pl
-  - cpanm -v Term::ReadKey@2.33
+  - perl -MTerm::ReadKey -E 'say $Term::ReadKey::VERSION'
