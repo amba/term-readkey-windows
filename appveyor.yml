@@ -1,9 +1,8 @@
 install:
-  - choco install --allowemptychecksum strawberryperl --version 5.20.1.1
+  - choco install --allowemptychecksum strawberryperl
   - path C:\strawberry\perl\bin;C:\strawberry\perl\site\bin;C:\strawberry\c\bin;%PATH%
   - perl -V
   
 build_script:
-  - perl term-readkey.pl
-  - cpanm -v Term::ReadKey
+  - cpanm -v Term::ReadKey@2.31
   - perl term-readkey.pl
